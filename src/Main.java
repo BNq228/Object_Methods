@@ -14,5 +14,18 @@ public class Main {
         System.out.println(String.format("%s написана автором %s %s в %s году",masterIMargarita.getName(),masterIMargarita.getAuthor().getName(),masterIMargarita.getAuthor().getSecondName(),masterIMargarita.getYear()));
 
         System.out.println(sobacheSerdce);
+
+        Author ivanIvanov = new Author("Иван", "Иванов");
+        Author ivanIvanov2 = new Author("Иван", "Иванов");
+
+        System.out.println(ivanIvanov.equals(ivanIvanov2));
+
+        Book ivanovBook = new Book("Я Иванов", ivanIvanov, 2020);
+        Book ivanovBook2 = new Book("Я Иванов", ivanIvanov2, 2020);
+
+        System.out.println(ivanovBook.equals(ivanovBook2));
+
+        System.out.println(ivanovBook.hashCode());
+        System.out.println(ivanovBook2.hashCode());
     }
 }
