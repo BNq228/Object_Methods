@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Hello world");
 
         Author alexanderPushkin = new Author("Александр", "Пушкин");
         Book ruslanLydmilya = new Book("Руслан и Людмила", alexanderPushkin, 1820);
